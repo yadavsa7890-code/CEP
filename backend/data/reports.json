@@ -1,0 +1,12 @@
+[
+  {
+    "ticketId": "CSI-4BD2E2C8",
+    "timestamp": "2026-09-08T17:42:05.940Z",
+    "scamType": "Phishing Email",
+    "suspectPhone": "+91 9876543210",
+    "suspectUrl": "http://fake-sbi.xyz",
+    "details": "I received a fake SBI email asking for my OTP and I almost clicked the link but then verified it was fake.",
+    "email": "test@example.com",
+    "status": "received"
+  }
+]
