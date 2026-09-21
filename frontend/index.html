@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CyberSafe India - Your trusted resource for cyber scam and phishing awareness. Learn to identify, prevent, and report online fraud." />
+  <title>CyberSafe India | Cyber Scam & Phishing Awareness</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="CyberSafe India Home">
+        <span class="logo-icon">🛡️</span>
+        Cyber<span>Safe</span> India
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" role="menubar">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="scam-types.html" role="menuitem">Scam Types</a>
+        <a href="prevention.html" role="menuitem">Prevention</a>
+        <a href="quiz.html" role="menuitem">Quiz</a>
+        <a href="contact.html" role="menuitem">Helplines</a>
+        <a href="report.html" class="nav-cta" role="menuitem">🚨 Report Fraud</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Alert Ticker ───────────────────────────────────────── -->
+  <div class="alert-ticker" role="marquee" aria-label="Trending scam alerts">
+    <div class="ticker-label">⚠️ LIVE ALERTS</div>
+    <div class="ticker-track">
+      <!-- Populated dynamically by main.js via /api/alerts -->
+      <span class="ticker-item"><strong>[CRITICAL]</strong> Digital Arrest Scam: Fraudsters impersonate CBI/ED officers via video call demanding money<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[HIGH]</strong> APK Malware: WhatsApp messages with fake bank KYC apps stealing device access<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[CRITICAL]</strong> Fake Investment Apps: Guaranteed return crypto/stock apps disappearing with deposits<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[HIGH]</strong> FedEx Parcel Scam: Fake courier calls claiming illegal items in your name<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[HIGH]</strong> OTP Phishing: Fake bank SMS stealing OTPs for KYC verification<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[CRITICAL]</strong> Digital Arrest Scam: Fraudsters impersonate CBI/ED officers via video call demanding money<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[HIGH]</strong> APK Malware: WhatsApp messages with fake bank KYC apps stealing device access<span class="ticker-sep">  ◆  </span></span>
+      <span class="ticker-item"><strong>[CRITICAL]</strong> Fake Investment Apps: Guaranteed return crypto/stock apps disappearing with deposits<span class="ticker-sep">  ◆  </span></span>
+    </div>
+  </div>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-label">
+          <span class="pulse"></span>
+          Real-time Cyber Threat Intelligence
+        </div>
+        <h1 id="hero-title">
+          Stay Safe from<br/>
+          <span class="accent-line">Online Scams &amp;</span><br/>
+          Digital Fraud
+        </h1>
+        <p>
+          India loses over ₹7,000 crore annually to cyber fraud. Learn to identify phishing attacks, digital arrest scams, fake investment traps, and malicious apps — before scammers target you.
+        </p>
+        <div class="hero-actions">
+          <a href="report.html" class="btn btn-danger btn-lg">
+            🚨 Report Cyber Fraud Now
+          </a>
+          <a href="quiz.html" class="btn btn-outline btn-lg">
+            🎯 Test Your Awareness
+          </a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Cyber crime statistics">
+          <div class="stat-item" role="listitem">
+            <div class="stat-value">1930</div>
+            <div class="stat-label">National Helpline</div>
+          </div>
+          <div class="stat-item" role="listitem">
+            <div class="stat-value">₹7K Cr</div>
+            <div class="stat-label">Lost Annually</div>
+          </div>
+          <div class="stat-item" role="listitem">
+            <div class="stat-value">14 Lakh+</div>
+            <div class="stat-label">Cases in 2023</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="shield-container">
+          <div class="shield-bg">
+            <span class="shield-icon">🛡️</span>
+          </div>
+          <div class="floating-alert">
+            <span>🚨</span> Digital Arrest Alert
+          </div>
+          <div class="floating-alert">
+            <span>🔒</span> Phishing Blocked
+          </div>
+          <div class="floating-alert">
+            <span>⚠️</span> APK Threat Detected
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Emergency CTA Bar ───────────────────────────────────── -->
+  <div style="background: linear-gradient(90deg, #1e293b, #0f172a); border-bottom: 1px solid #334155; padding: 1.25rem 0;">
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <span style="font-size:2rem;">📞</span>
+          <div>
+            <div style="font-weight:800; font-size:1.1rem; color:#fff;">Been scammed? Act within the GOLDEN HOUR</div>
+            <div style="color:#94a3b8; font-size:0.875rem;">Call the National Cyber Crime Helpline immediately to freeze the transaction.</div>
+          </div>
+        </div>
+        <a href="tel:1930" class="btn btn-danger">📞 Call 1930 Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Navigation Cards ───────────────────────────────────── -->
+  <section class="section" aria-labelledby="nav-cards-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Your Cyber Safety Hub</span>
+        <h2 id="nav-cards-title">Everything You Need to Stay Safe Online</h2>
+        <p>Explore our comprehensive resources designed to protect you from every angle of cyber crime.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="cards-grid">
+        <a href="scam-types.html" class="card nav-card" style="text-decoration:none;">
+          <span class="card-icon">🕵️</span>
+          <h3>Types of Scams</h3>
+          <p>Phishing, vishing, digital arrest, fake investment apps, QR fraud, APK malware — know every threat.</p>
+          <span class="card-link">Explore Scam Types →</span>
+        </a>
+
+        <a href="prevention.html" class="card nav-card" style="text-decoration:none;">
+          <span class="card-icon">🔒</span>
+          <h3>Prevention Guide</h3>
+          <p>Interactive checklists, red flags to watch for, 2FA setup guides, and browser security best practices.</p>
+          <span class="card-link">Learn Prevention →</span>
+        </a>
+
+        <a href="quiz.html" class="card nav-card" style="text-decoration:none;">
+          <span class="card-icon">🎯</span>
+          <h3>Scam Detector Quiz</h3>
+          <p>Test your knowledge with real-world scenarios. Can you spot a phishing email or fake bank SMS?</p>
+          <span class="card-link">Take the Quiz →</span>
+        </a>
+
+        <a href="report.html" class="card nav-card" style="text-decoration:none; border-color: rgba(239,68,68,0.3);">
+          <span class="card-icon">🚨</span>
+          <h3>Report Cyber Fraud</h3>
+          <p>Submit suspect details to our system and get guided to the official cybercrime reporting portal.</p>
+          <span class="card-link" style="color: var(--danger);">Report Now →</span>
+        </a>
+
+        <a href="contact.html" class="card nav-card" style="text-decoration:none;">
+          <span class="card-icon">📞</span>
+          <h3>Helplines &amp; Support</h3>
+          <p>Verified cyber cell numbers, bank fraud helplines, and a form to report new scam patterns you discover.</p>
+          <span class="card-link">View Helplines →</span>
+        </a>
+
+        <div class="card nav-card" style="background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(129,140,248,0.08)); border-color: rgba(6,182,212,0.25);">
+          <span class="card-icon">📊</span>
+          <h3>Current Threat Level</h3>
+          <p>India's national cyber threat level is currently <strong style="color:var(--danger)">HIGH</strong>. Digital arrest and investment scams are surging.</p>
+          <a href="scam-types.html#digital-arrest" class="card-link">See Latest Threats →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Top Scam Alerts Section ─────────────────────────────── -->
+  <section class="section" style="background: var(--surface-2); border-top: 1px solid var(--border);" aria-labelledby="alerts-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">⚠️ Active Threats</span>
+        <h2 id="alerts-title">High-Alert Scams Right Now</h2>
+        <p>These scams are currently being reported across India. Stay informed and share with loved ones.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="cards-grid" id="alerts-cards">
+        <!-- Populated by JS from /api/alerts or static fallback -->
+        <div class="card">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:0.75rem;">
+            <span class="badge badge-critical">Critical</span>
+            <span style="font-size:0.75rem; color:var(--text-secondary);">Sep 8, 2026</span>
+          </div>
+          <h3>🎭 Digital Arrest Scam</h3>
+          <p>Fraudsters impersonate CBI/ED/Police officers via video call, falsely accusing victims of crimes and demanding money to 'resolve' the case. Victims are kept on call for hours.</p>
+          <a href="scam-types.html" class="card-link">Learn More →</a>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:0.75rem;">
+            <span class="badge badge-critical">Critical</span>
+            <span style="font-size:0.75rem; color:var(--text-secondary);">Sep 7, 2026</span>
+          </div>
+          <h3>📱 Fake Investment Apps</h3>
+          <p>Fraudulent trading apps promise guaranteed 30-40% monthly returns. Small initial withdrawals build trust before large deposits are made and stolen.</p>
+          <a href="scam-types.html" class="card-link">Learn More →</a>
+        </div>
+
+        <div class="card">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:0.75rem;">
+            <span class="badge badge-high">High</span>
+            <span style="font-size:0.75rem; color:var(--text-secondary);">Sep 6, 2026</span>
+          </div>
+          <h3>📦 APK Malware Fraud</h3>
+          <p>WhatsApp messages containing APK files disguised as KYC apps, delivery tracking apps, or government forms. Installing grants scammers remote device control.</p>
+          <a href="scam-types.html" class="card-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="scam-types.html" class="btn btn-outline">View All Scam Types →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Quick Safety Tips ───────────────────────────────────── -->
+  <section class="section" aria-labelledby="tips-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Quick Safety Tips</span>
+        <h2 id="tips-title">The Golden Rules of Cyber Safety</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-left:3px solid var(--danger);">
+          <div style="font-size:1.75rem; margin-bottom:0.75rem;">🚫</div>
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Never Share OTPs</h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary);">No bank, government agency, or company will ever ask for your OTP, PIN, or password. Never share them.</p>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-left:3px solid var(--warning);">
+          <div style="font-size:1.75rem; margin-bottom:0.75rem;">🔗</div>
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Verify Links Before Clicking</h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary);">Hover over links to check the URL. Look for misspellings like "sbi-bank.co.in" or "amaz0n.com".</p>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-left:3px solid var(--accent);">
+          <div style="font-size:1.75rem; margin-bottom:0.75rem;">📞</div>
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Verify Caller Identity</h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary);">If someone claims to be from CBI/police, hang up and call the official number. Real officers don't video-call for arrests.</p>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-left:3px solid var(--success);">
+          <div style="font-size:1.75rem; margin-bottom:0.75rem;">⏱️</div>
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Act in the Golden Hour</h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary);">If scammed, call 1930 immediately. Transactions reported within the first hour have the highest chance of recovery.</p>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-left:3px solid #818cf8;">
+          <div style="font-size:1.75rem; margin-bottom:0.75rem;">📲</div>
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Only Install Official Apps</h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary);">Never install APK files from WhatsApp or email. Only download apps from Google Play Store or Apple App Store.</p>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-left:3px solid #f472b6;">
+          <div style="font-size:1.75rem; margin-bottom:0.75rem;">🔐</div>
+          <h3 style="font-size:1rem; margin-bottom:0.4rem;">Enable Two-Factor Auth</h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary);">Enable 2FA on all banking, email, and social media accounts. Use an authenticator app rather than SMS when possible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🛡️ Cyber<span>Safe</span> India</div>
+          <p>An awareness initiative to protect Indian citizens from online scams, phishing, and digital fraud. Always verify before you trust.</p>
+          <div class="footer-hotline" style="margin-top:1rem; display:inline-flex;">
+            📞 Helpline: 1930
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="scam-types.html">Scam Types</a></li>
+            <li><a href="prevention.html">Prevention Guide</a></li>
+            <li><a href="quiz.html">Awareness Quiz</a></li>
+            <li><a href="report.html">Report Fraud</a></li>
+            <li><a href="contact.html">Helplines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul>
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a></li>
+            <li><a href="https://www.cert-in.org.in" target="_blank" rel="noopener">CERT-In</a></li>
+            <li><a href="https://www.npci.org.in" target="_blank" rel="noopener">NPCI</a></li>
+            <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener">RBI India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="tel:1930">📞 1930 (Cyber Crime)</a></li>
+            <li><a href="tel:112">📞 112 (Police)</a></li>
+            <li><a href="tel:14440">📞 14440 (Bank)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CyberSafe India. For awareness purposes only. Always report crimes officially at cybercrime.gov.in</p>
+        <div class="footer-hotline">🚨 Emergency: 1930</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <div id="toast-container" role="region" aria-label="Notifications" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Load alerts dynamically into the alert cards section
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const res = await fetch('/api/alerts');
+        const data = await res.json();
+        if (!data.success) return;
+        const grid = document.getElementById('alerts-cards');
+        const top3 = data.alerts.slice(0, 3);
+        grid.innerHTML = top3.map(a => `
+          <div class="card">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:0.75rem;">
+              <span class="badge badge-${a.severity.toLowerCase()}">${escHtml(a.severity)}</span>
+              <span style="font-size:0.75rem; color:var(--text-secondary);">${escHtml(a.date)}</span>
+            </div>
+            <h3>${escHtml(a.title)}</h3>
+            <p>${escHtml(a.description)}</p>
+            <a href="scam-types.html" class="card-link">Learn More →</a>
+          </div>`).join('');
+      } catch { /* static fallback remains */ }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about all types of cyber scams in India: phishing, smishing, vishing, digital arrest, investment fraud, QR code fraud, and malicious apps." />
+  <title>Types of Scams | CyberSafe India</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">🛡️</span>Cyber<span>Safe</span> India</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="scam-types.html" class="active">Scam Types</a>
+        <a href="prevention.html">Prevention</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Helplines</a>
+        <a href="report.html" class="nav-cta">🚨 Report Fraud</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ──────────────────────────────────────────── -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Scam Types</span>
+      </div>
+      <h1>🕵️ Types of Cyber Scams</h1>
+      <p>Understand every threat targeting Indian citizens — from phishing emails to sophisticated digital arrest schemes.</p>
+    </div>
+  </header>
+
+  <!-- ── Main Content ───────────────────────────────────────── -->
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Tabs -->
+        <div class="tabs" role="tablist" aria-label="Scam categories">
+          <div class="tab-nav">
+            <button class="tab-btn active" data-tab="tab-phishing" role="tab" aria-selected="true" aria-controls="tab-phishing">📧 Phishing &amp; Smishing</button>
+            <button class="tab-btn" data-tab="tab-vishing" role="tab" aria-selected="false" aria-controls="tab-vishing">📞 Vishing &amp; Digital Arrest</button>
+            <button class="tab-btn" data-tab="tab-financial" role="tab" aria-selected="false" aria-controls="tab-financial">💰 Financial &amp; Investment</button>
+            <button class="tab-btn" data-tab="tab-apps" role="tab" aria-selected="false" aria-controls="tab-apps">📱 Malicious Apps &amp; QR</button>
+          </div>
+
+          <!-- ── Tab 1: Phishing & Smishing ─────────────────── -->
+          <div id="tab-phishing" class="tab-panel active" role="tabpanel">
+            <div style="margin-top:2rem;">
+              <h2 style="margin-bottom:0.5rem;">📧 Phishing &amp; Smishing Scams</h2>
+              <p style="color:var(--text-secondary); margin-bottom:2rem; max-width:700px;">Scammers send fake emails (phishing) or SMS messages (smishing) that look identical to legitimate communications from banks, government agencies, or popular services to steal your credentials or money.</p>
+
+              <div class="accordion" role="list">
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>📩 Email Phishing — Fake Bank / Government Emails</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>You receive an email claiming to be from SBI, HDFC, UIDAI, or Income Tax department. The email warns of account suspension, KYC expiry, or tax refund and contains a link to a fake website that captures your login credentials.</p>
+                      <br/>
+                      <strong>How to spot it:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Sender email domain doesn't match official (e.g., sbi-india-alert@gmail.com)</li>
+                        <li>Urgent language: "Your account will be suspended in 24 hours"</li>
+                        <li>Link URL shows a different domain when you hover over it</li>
+                        <li>Generic greeting like "Dear Customer" instead of your name</li>
+                        <li>Poor grammar, spelling mistakes, or mismatched logos</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>💬 Smishing — Fake SMS with Malicious Links</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>Fake SMS messages appearing to come from TRAI, banks, or delivery services contain shortened links leading to phishing pages that steal OTPs, card numbers, or install malware.</p>
+                      <br/>
+                      <strong>Common Examples:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>"Your mobile number is about to be deactivated. Update KYC at: bit.ly/xxxxx"</li>
+                        <li>"Your package is on hold. Pay ₹25 customs fee: [link]"</li>
+                        <li>"Your UIDAI Aadhaar is linked to illegal activity. Call: 9XXXXXXXXX"</li>
+                        <li>"Congratulations! You won a prize. Claim at: [suspicious link]"</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>💳 OTP Theft &amp; SIM Swap Fraud</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>Scammers trick you into sharing OTPs by pretending to be bank executives conducting KYC. In SIM swap attacks, they convince your carrier to issue a new SIM for your number, intercepting all OTPs.</p>
+                      <br/>
+                      <strong>Warning Signs:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Unexpected call asking you to share an OTP you just received</li>
+                        <li>Your phone suddenly loses network connectivity (SIM swap)</li>
+                        <li>Unexpected transaction alerts followed by no network</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Real vs Fake Comparison -->
+              <h3 style="margin-top:2.5rem; margin-bottom:0.5rem;">Real vs. Fake Email: Side-by-Side</h3>
+              <div class="compare-grid">
+                <div class="compare-card real">
+                  <h4>✅ Legitimate Bank Email</h4>
+                  <ul>
+                    <li>From: alerts@sbi.co.in (official domain)</li>
+                    <li>Addresses you by full registered name</li>
+                    <li>Links point to sbi.co.in or onlinesbi.sbi</li>
+                    <li>Never asks for OTP, PIN, or password</li>
+                    <li>Professional, error-free language</li>
+                    <li>HTTPS secured website with padlock</li>
+                    <li>Sender verified by DMARC/DKIM</li>
+                  </ul>
+                </div>
+                <div class="compare-card fake">
+                  <h4>🚨 Phishing Email</h4>
+                  <ul>
+                    <li>From: sbi-bank-support@gmail.com</li>
+                    <li>Generic greeting: "Dear Valued Customer"</li>
+                    <li>Link: bit.ly/sbikyc or sbi-update.xyz</li>
+                    <li>Asks to "verify OTP to prevent suspension"</li>
+                    <li>Spelling errors, mismatched fonts/logos</li>
+                    <li>HTTP website, invalid certificate</li>
+                    <li>Urgent 24-hour deadline to create panic</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Tab 2: Vishing & Digital Arrest ───────────── -->
+          <div id="tab-vishing" class="tab-panel" role="tabpanel">
+            <div style="margin-top:2rem;">
+              <h2 style="margin-bottom:0.5rem;">📞 Vishing &amp; Digital Arrest Scams</h2>
+              <p style="color:var(--text-secondary); margin-bottom:2rem; max-width:700px;">These voice-based scams involve criminals impersonating law enforcement, government officials, or bank representatives to psychologically pressure victims into paying money or sharing sensitive information.</p>
+
+              <div style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); border-radius:var(--radius); padding:1.5rem; margin-bottom:2rem;">
+                <h3 style="color:var(--danger); margin-bottom:0.5rem;">🚨 Digital Arrest Scam — India's #1 Threat</h3>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">A scammer calls claiming to be from CBI, Narcotics Control Bureau, or Customs. They say a parcel in your name contains drugs, fake passports, or illegal items. They then conduct a fake "video call interrogation" and keep you on call for hours, demanding payment to "settle" the case. <strong style="color:#fca5a5;">The Supreme Court of India has stated there is NO such thing as a digital arrest.</strong></p>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>🎭 Digital Arrest / CBI Impersonation Scam</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p><strong>How it works:</strong> Call from someone claiming to be a senior CBI/IPS/ED officer. They show fake ID cards on video and conduct a "verification." They claim your Aadhaar is linked to money laundering or that a FedEx parcel in your name was intercepted with drugs. They threaten immediate arrest unless you pay a "security deposit."</p>
+                      <br/>
+                      <strong>Red Flags:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>No government officer conducts arrests or interrogations via video call</li>
+                        <li>Pressure to stay on the call and not tell family members</li>
+                        <li>Demand for immediate wire transfer or UPI payment</li>
+                        <li>Instructions to buy gift cards (Amazon, Google Play) to pay the "fine"</li>
+                        <li>Call from international number or with police background sounds</li>
+                      </ul>
+                      <br/>
+                      <strong style="color:var(--success);">What to do: Hang up immediately. Call 1930. Talk to a family member.</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>📦 FedEx / Courier Parcel Scam</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>You receive a call saying a FedEx or Blue Dart parcel addressed to you has been seized at customs containing illegal items. They connect you to a "police officer" who demands money to close the case without filing charges.</p>
+                      <br/>
+                      <strong>Remember:</strong> Couriers do not call you about seized parcels. Customs authorities handle this in person, not over phone calls. Never pay anyone claiming to be a government official over the phone.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>🏦 Bank / TRAI Executive Impersonation</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>Callers pretend to be from TRAI (Telecom Regulatory Authority) threatening to disconnect your mobile number, or from your bank saying suspicious transactions have been detected. They ask for OTPs, card details, or internet banking credentials.</p>
+                      <br/>
+                      <strong>Key Rule:</strong> Your bank will <em>never</em> call to ask for your full card number, CVV, PIN, or OTP. If you receive such a call, hang up and call your bank's official number on the back of your card.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compare-grid" style="margin-top:2rem;">
+                <div class="compare-card real">
+                  <h4>✅ Legitimate Government/Bank Call</h4>
+                  <ul>
+                    <li>Calls from official numbers listed on websites</li>
+                    <li>Never demands payment over the phone</li>
+                    <li>Gives you time to verify and call back</li>
+                    <li>Never threatens immediate arrest</li>
+                    <li>Does not conduct video call "hearings"</li>
+                    <li>Sends official notices by registered post</li>
+                  </ul>
+                </div>
+                <div class="compare-card fake">
+                  <h4>🚨 Scam Call</h4>
+                  <ul>
+                    <li>Unknown/international/VOIP number</li>
+                    <li>Demands immediate payment or gift cards</li>
+                    <li>Pressures you to not tell anyone</li>
+                    <li>Threatens instant arrest if you disconnect</li>
+                    <li>Conducts fake "digital arrest" via video call</li>
+                    <li>Claims to fix things if you share OTP/pay now</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Tab 3: Financial & Investment ─────────────── -->
+          <div id="tab-financial" class="tab-panel" role="tabpanel">
+            <div style="margin-top:2rem;">
+              <h2 style="margin-bottom:0.5rem;">💰 Financial &amp; Investment Fraud</h2>
+              <p style="color:var(--text-secondary); margin-bottom:2rem; max-width:700px;">These scams exploit the desire for financial gains, trapping victims with promises of guaranteed returns, work-from-home income, or crypto investment opportunities that are entirely fraudulent.</p>
+
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>📈 Fake Stock / Crypto Investment Scams</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>You're added to a WhatsApp/Telegram group where "financial experts" share stock tips. Initial small investments show impressive returns (actually fake balance screens). After you invest a large amount, the app disappears or withdrawals are blocked with excuses like "tax payment required."</p>
+                      <br/>
+                      <strong>Warning Signs:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Promises of guaranteed 20-40% monthly returns (impossible legitimately)</li>
+                        <li>Investment platform not registered with SEBI</li>
+                        <li>Platform asks for additional "tax" or "fee" before releasing profits</li>
+                        <li>Celebrity endorsements for "exclusive" trading software</li>
+                        <li>Unable to withdraw your principal amount</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>💼 Part-Time Job / Task-Based Scams</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>Offers to earn money by completing simple tasks like rating Amazon products, liking YouTube videos, or hotel reviews. After completing free tasks and receiving small payments, victims are asked to invest money to unlock higher-paying tasks. The investment is never returned.</p>
+                      <br/>
+                      <strong>Typical Progression:</strong>
+                      <ol style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Free tasks → ₹150 paid out to build trust</li>
+                        <li>Promoted to "premium tasks" requiring ₹5,000 deposit</li>
+                        <li>Task results show huge profit (fake)</li>
+                        <li>Withdrawal blocked — "technical issue" or "tax payment" needed</li>
+                        <li>More deposits demanded; then platform vanishes</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>💳 Loan App Fraud &amp; Extortion</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>Predatory instant loan apps promise no-collateral loans. After granting full device permissions (contacts, photos, camera), they charge exorbitant interest rates. When unable to pay, they use harvested photos and contacts to send morphed/threatening images to the borrower's family and employer.</p>
+                      <br/>
+                      <strong>Protection:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Only use RBI-registered lending apps from Play Store</li>
+                        <li>Check the RBI's list of registered NBFCs at rbi.org.in</li>
+                        <li>Never grant loan apps access to contacts, camera, or gallery</li>
+                        <li>Report extortion to cybercrime.gov.in immediately</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compare-grid" style="margin-top:2rem;">
+                <div class="compare-card real">
+                  <h4>✅ Legitimate Investment Platform</h4>
+                  <ul>
+                    <li>SEBI registered (check sebi.gov.in)</li>
+                    <li>Realistic returns (8-15% annually)</li>
+                    <li>Easy, instant withdrawals</li>
+                    <li>Proper KYC verification required</li>
+                    <li>Published company address and GSTIN</li>
+                    <li>No unsolicited WhatsApp group invitations</li>
+                  </ul>
+                </div>
+                <div class="compare-card fake">
+                  <h4>🚨 Fake Investment Scam</h4>
+                  <ul>
+                    <li>Not registered with SEBI</li>
+                    <li>Promises 30-40% monthly guaranteed returns</li>
+                    <li>Withdrawal blocked once large deposit made</li>
+                    <li>Recruited via WhatsApp group with "guru"</li>
+                    <li>No verifiable company address</li>
+                    <li>App not on official Play Store / App Store</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Tab 4: Malicious Apps & QR ─────────────────── -->
+          <div id="tab-apps" class="tab-panel" role="tabpanel">
+            <div style="margin-top:2rem;">
+              <h2 style="margin-bottom:0.5rem;">📱 Malicious Apps &amp; QR Code Fraud</h2>
+              <p style="color:var(--text-secondary); margin-bottom:2rem; max-width:700px;">Cybercriminals use malicious applications and manipulated QR codes to gain access to your device, bank accounts, or trick you into sending money unknowingly.</p>
+
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>📦 APK / Sideloaded App Malware</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>You receive a WhatsApp message with an APK file claiming to be a bank KYC app, government form, or delivery tracking app. Installing it grants the scammer remote access (RAT - Remote Access Trojan) to your device, allowing them to view your screen, steal OTPs, and access banking apps.</p>
+                      <br/>
+                      <strong>How RATs Work:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>Runs silently in the background</li>
+                        <li>Forwards all SMS (including OTPs) to scammers</li>
+                        <li>Records screen when you open banking apps</li>
+                        <li>Can make calls, send SMS on your behalf</li>
+                        <li>Scammers wait until you receive salary before striking</li>
+                      </ul>
+                      <br/>
+                      <strong style="color:var(--danger);">NEVER install APK files from WhatsApp, email, or unknown websites.</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>📷 QR Code Payment Fraud</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>The most common QR scam: A "buyer" for your OLX listing sends you a QR code saying "Scan this to RECEIVE ₹5,000." Scanning actually initiates a UPI payment FROM your account. The scammer banks on your confusion between "receive" and "send."</p>
+                      <br/>
+                      <strong>Key Rule:</strong> <span style="color:var(--success); font-weight:600;">Scanning a QR code to receive money is NEVER required. QR codes only initiate OUTGOING payments.</span>
+                      <br/><br/>
+                      <strong>Other QR Scams:</strong>
+                      <ul style="margin-top:0.5rem; display:flex; flex-direction:column; gap:0.4rem; list-style:disc; padding-left:1.5rem; color:var(--text-secondary); font-size:0.9rem;">
+                        <li>QR stickers placed over legitimate restaurant/shop QR codes</li>
+                        <li>Fake charity QR codes at public events</li>
+                        <li>QR codes in fake courier delivery slips redirecting to phishing sites</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <button class="accordion-header" aria-expanded="false">
+                    <span>🖥️ AnyDesk / Screen-Share Fraud</span>
+                    <span class="accordion-icon">▾</span>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-content">
+                      <p>Scammers posing as bank customer care or tech support ask you to download AnyDesk, TeamViewer, or QuickSupport to "fix your account." Once you grant access, they navigate your banking app and transfer all funds within minutes.</p>
+                      <br/>
+                      <strong>Remember:</strong> Bank customer service agents will NEVER ask you to download remote access software. If someone asks you to share your screen, it is 100% a scam.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compare-grid" style="margin-top:2rem;">
+                <div class="compare-card real">
+                  <h4>✅ Safe App Behavior</h4>
+                  <ul>
+                    <li>Downloaded from Google Play / Apple App Store</li>
+                    <li>Only requests permissions it needs to function</li>
+                    <li>Verified developer with reviews and history</li>
+                    <li>QR scan shows amount LEAVING your account</li>
+                    <li>Bank apps have HTTPS and certificate pinning</li>
+                    <li>Customer support never needs screen access</li>
+                  </ul>
+                </div>
+                <div class="compare-card fake">
+                  <h4>🚨 Malicious App / QR Scam</h4>
+                  <ul>
+                    <li>APK sent via WhatsApp, email, or SMS link</li>
+                    <li>Requests SMS, call, contacts, accessibility access</li>
+                    <li>No reviews, unknown developer, recent upload date</li>
+                    <li>Scammer says "scan QR to receive money"</li>
+                    <li>Redirects to .xyz, .tk, or misspelled domains</li>
+                    <li>Customer care agent asks you to install AnyDesk</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end .tabs -->
+
+        <!-- Bottom CTA -->
+        <div style="text-align:center; margin-top:3rem; padding:2.5rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="margin-bottom:0.75rem;">Think you might have been scammed?</h3>
+          <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Act immediately — call 1930 and submit a report to help others stay safe.</p>
+          <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a href="report.html" class="btn btn-danger">🚨 Report Now</a>
+            <a href="prevention.html" class="btn btn-outline">Learn Prevention →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🛡️ Cyber<span>Safe</span> India</div>
+          <p>Protecting Indian citizens from online fraud through awareness and education.</p>
+          <div class="footer-hotline" style="margin-top:1rem; display:inline-flex;">📞 Helpline: 1930</div>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="scam-types.html">Scam Types</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="report.html">Report Fraud</a></li>
+            <li><a href="contact.html">Helplines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul>
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a></li>
+            <li><a href="https://www.cert-in.org.in" target="_blank" rel="noopener">CERT-In</a></li>
+            <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener">RBI India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="tel:1930">📞 1930 (Cyber)</a></li>
+            <li><a href="tel:112">📞 112 (Police)</a></li>
+            <li><a href="tel:14440">📞 14440 (Bank)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CyberSafe India. For awareness purposes only.</p>
+        <div class="footer-hotline">🚨 Emergency: 1930</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

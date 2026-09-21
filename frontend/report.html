@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Report cyber fraud in India. Submit scam details, collect evidence, and get redirected to official portals like cybercrime.gov.in and helpline 1930." />
+  <title>Report Cyber Fraud | CyberSafe India</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">🛡️</span>Cyber<span>Safe</span> India</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="scam-types.html">Scam Types</a>
+        <a href="prevention.html">Prevention</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Helplines</a>
+        <a href="report.html" class="nav-cta active">🚨 Report Fraud</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero" style="background: linear-gradient(135deg, #1a0505, #0f172a);">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Report Fraud</span>
+      </div>
+      <h1>🚨 Report Cyber Fraud</h1>
+      <p>Submit suspect details to help authorities track scammers. You will be guided to official reporting portals after submission.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- ── Emergency Golden Hour Banner ───────────────── -->
+        <div class="emergency-banner" role="alert" aria-label="Emergency guidance">
+          <div class="em-left">
+            <div class="em-icon">⏱️</div>
+            <div>
+              <h3>🚨 Act Within the GOLDEN HOUR</h3>
+              <p>If you just transferred money to a scammer, you have the best chance of recovery if you act within the first 60 minutes. Banks can freeze fraudulent transactions if reported immediately.</p>
+            </div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.75rem; align-items:center;">
+            <a href="tel:1930" class="btn btn-danger">📞 Call 1930 Now</a>
+            <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">🌐 cybercrime.gov.in</a>
+          </div>
+        </div>
+
+        <!-- ── Evidence Checklist ─────────────────────────── -->
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:2rem; margin-bottom:2rem;">
+          <h2 style="margin-bottom:0.5rem; font-size:1.3rem;">📋 Before You Report — Collect This Evidence</h2>
+          <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:1.5rem;">Click each item to mark it as collected. Strong evidence significantly increases the chances of recovering your money and prosecuting the scammer.</p>
+          <div class="evidence-grid" id="evidence-grid">
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">📸</div>
+              <h4>Screenshots</h4>
+              <p>Scam messages, calls, payment confirmations</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">🧾</div>
+              <h4>UTR / Transaction ID</h4>
+              <p>Bank or UPI transaction reference number</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">📄</div>
+              <h4>Bank Statement</h4>
+              <p>PDF statement showing the fraudulent transfer</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">📱</div>
+              <h4>Suspect Phone Number</h4>
+              <p>The number that called or messaged you</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">🔗</div>
+              <h4>Malicious URLs</h4>
+              <p>Links you received or clicked on</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">📧</div>
+              <h4>Scammer Email / UPI ID</h4>
+              <p>Email address or UPI ID money was sent to</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">🕐</div>
+              <h4>Date &amp; Time</h4>
+              <p>Exact date and time of the incident</p>
+            </div>
+            <div class="evidence-item" onclick="toggleEvidence(this)" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="ev-icon">📋</div>
+              <h4>WhatsApp Chat Export</h4>
+              <p>Export and save the full scammer conversation</p>
+            </div>
+          </div>
+          <div id="evidence-status" style="font-size:0.85rem; color:var(--text-secondary); margin-top:1rem;">0 of 8 items collected</div>
+        </div>
+
+        <!-- ── Report Form ─────────────────────────────────── -->
+        <div class="form-card">
+          <h2 style="margin-bottom:0.4rem; font-size:1.3rem;">📝 Submit Scam Report</h2>
+          <p style="color:var(--text-secondary); font-size:0.875rem; margin-bottom:1.5rem;">
+            Your report is logged securely. After submitting, you will receive a Ticket ID and be guided to the official National Cyber Crime Portal.
+          </p>
+
+          <form id="report-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="scam-type">Scam Type <span style="color:var(--danger)">*</span></label>
+                <select id="scam-type" name="scamType" required>
+                  <option value="">— Select Scam Category —</option>
+                  <option value="Phishing Email">Phishing Email</option>
+                  <option value="SMS Smishing">SMS / Smishing</option>
+                  <option value="Vishing / Voice Call">Vishing / Voice Call</option>
+                  <option value="Digital Arrest">Digital Arrest Scam</option>
+                  <option value="Investment Fraud">Fake Investment / Crypto</option>
+                  <option value="Job Scam">Part-Time Job / Task Scam</option>
+                  <option value="QR Code Fraud">QR Code Payment Fraud</option>
+                  <option value="APK Malware">Malicious APK / App</option>
+                  <option value="AnyDesk Screen Share">AnyDesk / Remote Access</option>
+                  <option value="Loan App Fraud">Predatory Loan App</option>
+                  <option value="FedEx Parcel Scam">FedEx / Courier Scam</option>
+                  <option value="OTP Theft">OTP Theft</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="form-error" id="err-type">Please select a scam type.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="suspect-phone">Suspect Phone / WhatsApp Number</label>
+                <input type="tel" id="suspect-phone" name="suspectPhone" placeholder="e.g. +91 9876543210" autocomplete="off" />
+                <span class="form-hint">Include country code if available. At least one of Phone or URL is required.</span>
+                <span class="form-error" id="err-phone">Please provide at least a phone number or URL.</span>
+              </div>
+
+              <div class="form-group full">
+                <label for="suspect-url">Suspect URL / Website / Email</label>
+                <input type="text" id="suspect-url" name="suspectUrl" placeholder="e.g. https://sbi-fake-kyc.xyz or phisher@gmail.com" autocomplete="off" />
+              </div>
+
+              <div class="form-group full">
+                <label for="details">Incident Description <span style="color:var(--danger)">*</span></label>
+                <textarea id="details" name="details" placeholder="Describe what happened: How were you contacted? What did they claim? What information or money did they request? Did you comply?" rows="5" required></textarea>
+                <span class="form-hint">Minimum 20 characters. The more detail, the better for investigation.</span>
+                <span class="form-error" id="err-details">Please provide at least 20 characters of description.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="report-email">Your Email (optional)</label>
+                <input type="email" id="report-email" name="email" placeholder="for ticket confirmation" autocomplete="email" />
+                <span class="form-hint">We'll send your Ticket ID to this email for tracking.</span>
+                <span class="form-error" id="err-email">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group" style="justify-content:flex-end; align-items:flex-end;">
+                <div style="background:rgba(6,182,212,0.07); border:1px solid rgba(6,182,212,0.2); border-radius:var(--radius-sm); padding:0.75rem 1rem; font-size:0.8rem; color:var(--text-secondary); line-height:1.6;">
+                  🔒 Your data is stored securely on our server. This report supplements — but does NOT replace — official reporting at <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" style="color:var(--accent);">cybercrime.gov.in</a>.
+                </div>
+              </div>
+
+              <div class="form-group full">
+                <button type="submit" class="btn btn-danger btn-lg" id="report-submit-btn" style="width:100%; justify-content:center;">
+                  🚨 Submit Report &amp; Get Ticket ID
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success / Error Alerts -->
+          <div class="alert-box alert-success" id="report-success" role="alert">
+            <div id="success-content"></div>
+          </div>
+          <div class="alert-box alert-error" id="report-error" role="alert">
+            <div id="error-content"></div>
+          </div>
+        </div>
+
+        <!-- ── Official Reporting Portals ─────────────────── -->
+        <div style="margin-top:2rem;">
+          <h3 style="margin-bottom:1.25rem; font-size:1.1rem;">🏛️ Official Reporting Channels</h3>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem;">
+            <a href="https://cybercrime.gov.in" target="_blank" rel="noopener" style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem; text-decoration:none; transition:all 0.3s ease; display:block;" onmouseover="this.style.borderColor='rgba(6,182,212,0.4)'" onmouseout="this.style.borderColor='var(--border)'">
+              <div style="font-size:1.75rem; margin-bottom:0.5rem;">🌐</div>
+              <h4 style="font-size:0.95rem; color:var(--text-primary); margin-bottom:0.25rem;">cybercrime.gov.in</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary);">Official National Cyber Crime Reporting Portal. File FIR, track complaints.</p>
+              <span style="font-size:0.8rem; color:var(--accent); margin-top:0.5rem; display:inline-block;">Open Portal →</span>
+            </a>
+            <a href="tel:1930" style="background:linear-gradient(135deg, rgba(239,68,68,0.08), rgba(239,68,68,0.03)); border:1px solid rgba(239,68,68,0.3); border-radius:var(--radius); padding:1.25rem; text-decoration:none; display:block;">
+              <div style="font-size:1.75rem; margin-bottom:0.5rem;">📞</div>
+              <h4 style="font-size:0.95rem; color:var(--text-primary); margin-bottom:0.25rem;">Helpline: 1930</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary);">National Cyber Crime Helpline. 24x7. Call immediately if you lost money.</p>
+              <span style="font-size:0.8rem; color:var(--danger); margin-top:0.5rem; display:inline-block;">Call 1930 →</span>
+            </a>
+            <a href="https://www.cert-in.org.in" target="_blank" rel="noopener" style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem; text-decoration:none; display:block;" onmouseover="this.style.borderColor='rgba(6,182,212,0.4)'" onmouseout="this.style.borderColor='var(--border)'">
+              <div style="font-size:1.75rem; margin-bottom:0.5rem;">🛡️</div>
+              <h4 style="font-size:0.95rem; color:var(--text-primary); margin-bottom:0.25rem;">CERT-In</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary);">Indian Computer Emergency Response Team. Report phishing websites and malware.</p>
+              <span style="font-size:0.8rem; color:var(--accent); margin-top:0.5rem; display:inline-block;">Report to CERT-In →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🛡️ Cyber<span>Safe</span> India</div>
+          <p>Protecting Indian citizens from online fraud through awareness and education.</p>
+          <div class="footer-hotline" style="margin-top:1rem; display:inline-flex;">📞 Helpline: 1930</div>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="scam-types.html">Scam Types</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Helplines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul>
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a></li>
+            <li><a href="https://www.cert-in.org.in" target="_blank" rel="noopener">CERT-In</a></li>
+            <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener">RBI India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="tel:1930">📞 1930 (Cyber)</a></li>
+            <li><a href="tel:112">📞 112 (Police)</a></li>
+            <li><a href="tel:14440">📞 14440 (Bank)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CyberSafe India. For awareness purposes only. Always report crimes officially.</p>
+        <div class="footer-hotline">🚨 Emergency: 1930</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script src="js/report.js"></script>
+</body>
+</html>

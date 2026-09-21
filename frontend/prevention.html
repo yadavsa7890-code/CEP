@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cyber scam prevention guide: interactive URL checklist, 2FA setup, password managers, mobile and browser security best practices." />
+  <title>Prevention Guide | CyberSafe India</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">🛡️</span>Cyber<span>Safe</span> India</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="scam-types.html">Scam Types</a>
+        <a href="prevention.html" class="active">Prevention</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Helplines</a>
+        <a href="report.html" class="nav-cta">🚨 Report Fraud</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Prevention Guide</span>
+      </div>
+      <h1>🔒 Prevention &amp; Red Flags</h1>
+      <p>Interactive checklists, step-by-step security guides, and best practices to keep you protected online.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- ── URL & Email Inspection Checklist ────────────── -->
+        <div class="section-header" style="text-align:left; margin-bottom:1.5rem;">
+          <span class="section-eyebrow">Interactive Checklist</span>
+          <h2>🔗 Detect Malicious URLs &amp; Emails</h2>
+          <p style="max-width:600px;">Before clicking any link or acting on an email, run through this checklist. Click each item to mark it as checked.</p>
+        </div>
+
+        <div class="checklist-section" style="margin-bottom:3rem;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+            <strong>URL Safety Checklist</strong>
+            <span class="check-progress-label" style="font-size:0.85rem; color:var(--text-secondary);">0/8 completed</span>
+          </div>
+          <div class="checklist">
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Check the domain spelling carefully</strong>
+                <span>Look for subtle misspellings: amaz0n.com, sbi-bank.co.in, paypa1.com, uidai-india.xyz</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Verify it uses HTTPS (padlock icon)</strong>
+                <span>HTTP sites are not encrypted. However, HTTPS alone doesn't guarantee legitimacy — scammers also use HTTPS.</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Watch for suspicious TLDs</strong>
+                <span>Official Indian government sites use .gov.in. Be wary of .xyz, .tk, .ml, .cf, .ga domains in official-looking messages.</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Expand shortened URLs before clicking</strong>
+                <span>Use unshorten.it or hover over the link to see the destination. Scammers hide malicious URLs behind bit.ly, tinyurl, etc.</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Verify the sender's email domain</strong>
+                <span>Check if the domain after @ matches the official company domain. "support@sbi-bank-helpdesk.com" is NOT sbi.co.in</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Look for urgent/threatening language</strong>
+                <span>"Act within 24 hours", "Your account will be suspended", "Legal action will be taken" — these are pressure tactics.</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Check for unexpected requests</strong>
+                <span>Did you initiate this transaction or verification? Unsolicited requests for OTPs, PINs, or document uploads are red flags.</span>
+              </div>
+            </div>
+            <div class="check-item" role="checkbox" aria-checked="false" tabindex="0">
+              <div class="check-box"></div>
+              <div class="check-text">
+                <strong>Scan the link with VirusTotal</strong>
+                <span>Copy the URL and check it at virustotal.com for malware before opening anything suspicious.</span>
+              </div>
+            </div>
+          </div>
+          <div class="check-progress" style="margin-top:1rem;">
+            <div class="check-progress-bar" style="width:0%"></div>
+          </div>
+        </div>
+
+        <!-- ── 2FA Setup Guide ─────────────────────────────── -->
+        <div style="border-top: 1px solid var(--border); padding-top:3rem; margin-bottom:3rem;">
+          <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+            <span class="section-eyebrow">Step-by-Step Guide</span>
+            <h2>🔐 Setting Up Two-Factor Authentication (2FA/MFA)</h2>
+            <p style="max-width:620px;">2FA adds a second layer of security so even if your password is stolen, attackers cannot access your account. It's one of the most effective protections available.</p>
+          </div>
+
+          <div class="tabs">
+            <div class="tab-nav">
+              <button class="tab-btn active" data-tab="2fa-google">Google / Gmail</button>
+              <button class="tab-btn" data-tab="2fa-bank">Banking Apps</button>
+              <button class="tab-btn" data-tab="2fa-social">Social Media</button>
+              <button class="tab-btn" data-tab="2fa-app">Authenticator Apps</button>
+            </div>
+
+            <div id="2fa-google" class="tab-panel active" style="padding-top:1.5rem;">
+              <div class="steps-list">
+                <div class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <h4>Open Google Account Settings</h4>
+                    <p>Go to myaccount.google.com and click on "Security" in the left sidebar.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <h4>Find "2-Step Verification"</h4>
+                    <p>Under "How you sign in to Google", click on "2-Step Verification" and then "Get started".</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <h4>Choose Your Second Factor</h4>
+                    <p>Recommended: Google Authenticator app. Avoid SMS-based 2FA if possible (SIM swap vulnerability). Select "Authenticator app" for best security.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">4</div>
+                  <div class="step-content">
+                    <h4>Scan the QR Code</h4>
+                    <p>Download Google Authenticator from the Play Store, open it, tap the + button, and scan the QR code shown on screen.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">5</div>
+                  <div class="step-content">
+                    <h4>Save Backup Codes</h4>
+                    <p>Google provides 10 backup codes. Print or store these securely offline. They allow access if you lose your phone.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="2fa-bank" class="tab-panel" style="padding-top:1.5rem;">
+              <div style="background:rgba(6,182,212,0.07); border:1px solid rgba(6,182,212,0.2); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem; font-size:0.9rem; color:var(--text-secondary);">
+                <strong style="color:var(--accent);">ℹ️ Note:</strong> Indian banks are mandated by RBI to use 2FA for all online transactions. The standard method is OTP via SMS. However, you should additionally secure your banking app/net banking login itself.
+              </div>
+              <div class="steps-list">
+                <div class="step-item">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <h4>Enable app PIN / Biometric Lock</h4>
+                    <p>In your bank's mobile app settings, enable fingerprint/face unlock AND a separate app PIN. This prevents access even if your phone is unlocked.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <h4>Set Transaction Alerts</h4>
+                    <p>Enable SMS and email alerts for ALL transactions, even ₹1. This gives you immediate notice of unauthorized transactions.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <h4>Set Transaction Limits</h4>
+                    <p>In net banking, set daily UPI/NEFT/RTGS limits to the minimum you need. Reduce limits when traveling abroad.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">4</div>
+                  <div class="step-content">
+                    <h4>Use a Dedicated Email for Banking</h4>
+                    <p>Create a separate email address used only for banking communications. Never use this email for social media or shopping.</p>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <div class="step-num">5</div>
+                  <div class="step-content">
+                    <h4>Register a Secondary Phone for OTPs</h4>
+                    <p>Some banks allow registering a second number for OTPs. Use a phone not associated with social media accounts to reduce SIM swap risk.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="2fa-social" class="tab-panel" style="padding-top:1.5rem;">
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem;">
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem;">
+                  <h4 style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;"><span style="font-size:1.3rem;">📘</span> Facebook / Instagram</h4>
+                  <ol style="display:flex; flex-direction:column; gap:0.5rem; padding-left:1.25rem; color:var(--text-secondary); font-size:0.875rem;">
+                    <li>Settings &amp; Privacy → Security and Login</li>
+                    <li>Two-Factor Authentication → Edit</li>
+                    <li>Choose Authentication App</li>
+                    <li>Scan QR with Google/Microsoft Authenticator</li>
+                    <li>Enter the 6-digit code to confirm</li>
+                  </ol>
+                </div>
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem;">
+                  <h4 style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;"><span style="font-size:1.3rem;">🐦</span> Twitter / X</h4>
+                  <ol style="display:flex; flex-direction:column; gap:0.5rem; padding-left:1.25rem; color:var(--text-secondary); font-size:0.875rem;">
+                    <li>More → Settings → Security and account access</li>
+                    <li>Security → Two-factor authentication</li>
+                    <li>Select Authentication App</li>
+                    <li>Follow prompts to link your authenticator</li>
+                    <li>Download and store backup codes</li>
+                  </ol>
+                </div>
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem;">
+                  <h4 style="margin-bottom:0.75rem; display:flex; align-items:center; gap:0.5rem;"><span style="font-size:1.3rem;">💼</span> WhatsApp</h4>
+                  <ol style="display:flex; flex-direction:column; gap:0.5rem; padding-left:1.25rem; color:var(--text-secondary); font-size:0.875rem;">
+                    <li>Settings → Account → Two-step verification</li>
+                    <li>Enable → Create a 6-digit PIN</li>
+                    <li>Add a recovery email address</li>
+                    <li>This prevents SIM swap account takeover</li>
+                    <li>Never share this PIN with anyone</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div id="2fa-app" class="tab-panel" style="padding-top:1.5rem;">
+              <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.95rem;">Authenticator apps generate time-based 6-digit codes that change every 30 seconds. They are much safer than SMS-based OTPs.</p>
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem;">
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-top:2px solid var(--success);">
+                  <h4 style="margin-bottom:0.5rem;">🔐 Google Authenticator</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">Free, simple, widely supported. Best for personal use.</p>
+                  <span class="badge badge-medium" style="font-size:0.7rem;">RECOMMENDED</span>
+                </div>
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem;">
+                  <h4 style="margin-bottom:0.5rem;">🔷 Microsoft Authenticator</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">Includes cloud backup, push notifications, and password manager.</p>
+                  <span class="badge badge-low">GOOD CHOICE</span>
+                </div>
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem;">
+                  <h4 style="margin-bottom:0.5rem;">🔑 Authy</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">Multi-device sync, encrypted backup. Best for users with multiple devices.</p>
+                  <span class="badge badge-low">GOOD CHOICE</span>
+                </div>
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem; border-top:2px solid var(--danger);">
+                  <h4 style="margin-bottom:0.5rem;">📱 SMS OTP</h4>
+                  <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.75rem;">Vulnerable to SIM swap attacks. Use only when no other option exists.</p>
+                  <span class="badge badge-high">USE WITH CAUTION</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Password Manager Guide ─────────────────────── -->
+        <div style="border-top: 1px solid var(--border); padding-top:3rem; margin-bottom:3rem;">
+          <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+            <span class="section-eyebrow">Security Essential</span>
+            <h2>🗝️ Setting Up a Password Manager</h2>
+            <p style="max-width:620px;">A password manager generates and stores unique, strong passwords for every account. You only need to remember one master password.</p>
+          </div>
+
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; margin-bottom:2rem;">
+            <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem;">
+              <h4 style="margin-bottom:1rem; font-size:1rem;">Why use one?</h4>
+              <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:var(--text-secondary);"><span style="color:var(--success);">✓</span> Generates unique 20+ character passwords for every site</li>
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:var(--text-secondary);"><span style="color:var(--success);">✓</span> Prevents password reuse (biggest vulnerability)</li>
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:var(--text-secondary);"><span style="color:var(--success);">✓</span> Alerts you when a site you use has been breached</li>
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:var(--text-secondary);"><span style="color:var(--success);">✓</span> Auto-fills on correct domains (won't fill on phishing sites)</li>
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.875rem; color:var(--text-secondary);"><span style="color:var(--success);">✓</span> Encrypted vault with zero-knowledge architecture</li>
+              </ul>
+            </div>
+            <div style="background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem;">
+              <h4 style="margin-bottom:1rem; font-size:1rem;">Recommended Options</h4>
+              <ul style="display:flex; flex-direction:column; gap:0.75rem;">
+                <li style="font-size:0.875rem;"><strong style="color:var(--accent);">Bitwarden</strong> <span style="color:var(--success); font-size:0.75rem; font-weight:700;"> FREE</span> — Open source, most trusted, cross-platform</li>
+                <li style="font-size:0.875rem;"><strong>1Password</strong> — Premium, excellent family plan, travel mode</li>
+                <li style="font-size:0.875rem;"><strong>Dashlane</strong> — Includes VPN and dark web monitoring</li>
+                <li style="font-size:0.875rem;"><strong style="color:var(--text-secondary);">Browser Built-in</strong> — Convenient but avoid for banking passwords</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="steps-list">
+            <div class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>Download Bitwarden (Free)</h4>
+                <p>Install the Bitwarden browser extension from the official Chrome/Firefox extension store and the mobile app from Play Store.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>Create a Strong Master Password</h4>
+                <p>Use a memorable passphrase of 4-5 random words: "Mango-River-Shield-89-Kite". Do NOT use your name, birthdate, or any personal info. Never write this down digitally.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>Import / Save Existing Passwords</h4>
+                <p>Bitwarden can import from Chrome, Firefox, or other managers. Enable the browser extension to auto-capture passwords as you log in.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h4>Audit and Strengthen Weak Passwords</h4>
+                <p>Use Bitwarden's Security Report to find weak, reused, or breached passwords. Change all flagged passwords starting with banking and email.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <h4>Enable 2FA on Your Password Manager</h4>
+                <p>This is critical — your password manager is the master key. Protect it with an authenticator app as the second factor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Security Hygiene Checklists ────────────────── -->
+        <div style="border-top: 1px solid var(--border); padding-top:3rem;">
+          <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+            <span class="section-eyebrow">Security Hygiene</span>
+            <h2>📱 Mobile &amp; Browser Security Best Practices</h2>
+          </div>
+
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:2rem;">
+            <!-- Mobile Security -->
+            <div class="checklist-section">
+              <h3 style="margin-bottom:1.25rem; font-size:1.1rem; display:flex; align-items:center; gap:0.5rem;"><span>📱</span> Mobile Device Security</h3>
+              <div class="checklist">
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Keep OS and apps updated</strong>
+                    <span>Enable auto-updates. Most attacks exploit known vulnerabilities in outdated software.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Only install apps from official stores</strong>
+                    <span>Never install APK files from WhatsApp, email, or third-party websites.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Review app permissions regularly</strong>
+                    <span>Settings → Apps → Review which apps have access to Camera, Contacts, SMS, Location.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Enable device lock with strong PIN/biometrics</strong>
+                    <span>Use a 6-digit PIN minimum or fingerprint. Avoid pattern locks.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Disable "Install from Unknown Sources"</strong>
+                    <span>Settings → Security → ensure "Install Unknown Apps" is off for all apps.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Beware public Wi-Fi</strong>
+                    <span>Never access banking or sensitive accounts on public Wi-Fi. Use mobile data or a VPN.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="check-progress"><div class="check-progress-bar" style="width:0%"></div></div>
+            </div>
+
+            <!-- Browser Security -->
+            <div class="checklist-section">
+              <h3 style="margin-bottom:1.25rem; font-size:1.1rem; display:flex; align-items:center; gap:0.5rem;"><span>🌐</span> Browser Security</h3>
+              <div class="checklist">
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Install uBlock Origin ad blocker</strong>
+                    <span>Blocks malicious ads, trackers, and many phishing redirects automatically.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Enable Safe Browsing (Google Chrome)</strong>
+                    <span>Settings → Privacy and security → Security → Enhanced protection.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Never save passwords in the browser for banking</strong>
+                    <span>Use a password manager extension instead. Browser-saved passwords are vulnerable to extensions.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Check for HTTPS before entering data</strong>
+                    <span>Look for the padlock icon. Click it to verify the certificate belongs to the correct domain.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Bookmark important banking/government sites</strong>
+                    <span>Access them only through bookmarks — never from search results or links in messages.</span>
+                  </div>
+                </div>
+                <div class="check-item" tabindex="0">
+                  <div class="check-box"></div>
+                  <div class="check-text">
+                    <strong>Regularly clear browser cookies and cache</strong>
+                    <span>Reduces tracking and exposure to session hijacking. Monthly clearing is good practice.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="check-progress"><div class="check-progress-bar" style="width:0%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div style="text-align:center; margin-top:3rem; padding:2.5rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="margin-bottom:0.75rem;">Ready to test your knowledge?</h3>
+          <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Take our interactive quiz to see how well you can spot scams in real scenarios.</p>
+          <a href="quiz.html" class="btn btn-primary btn-lg">🎯 Take the Scam Detector Quiz</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🛡️ Cyber<span>Safe</span> India</div>
+          <p>Protecting Indian citizens from online fraud through awareness and education.</p>
+          <div class="footer-hotline" style="margin-top:1rem; display:inline-flex;">📞 Helpline: 1930</div>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="scam-types.html">Scam Types</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="report.html">Report Fraud</a></li>
+            <li><a href="contact.html">Helplines</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Official Portals</h4>
+          <ul>
+            <li><a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a></li>
+            <li><a href="https://www.cert-in.org.in" target="_blank" rel="noopener">CERT-In</a></li>
+            <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener">RBI India</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <ul>
+            <li><a href="tel:1930">📞 1930 (Cyber)</a></li>
+            <li><a href="tel:112">📞 112 (Police)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 CyberSafe India. For awareness purposes only.</p>
+        <div class="footer-hotline">🚨 Emergency: 1930</div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
